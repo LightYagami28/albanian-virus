@@ -1,28 +1,21 @@
-albanian virus
-==============
+# Albanian Virus 🦠
 
-![Windows 10 screenshot of the albanian virus meme](./screenshot.png)
+![Windows 10 screenshot of the Albanian Virus meme](./screenshot.png)
 
-A recreation of the [albanian virus meme][1] 
+A playful recreation of the famous [Albanian Virus meme](https://www.reddit.com/r/masterhacker/comments/hbo7j2/the_virus_no_one_can_beat/) 😂.
 
-This version:
+### Features ✨
 
-- is written in C (which means you can compile it to an exe, and send it to your friends to prank them)
+- **Written in C**: Easily compile it to an `.exe` file and share it with friends for a fun prank. 🎉
+- **Minimal Code**: Just 11 lines of code with no external dependencies. 📝
+- **Windows Native**: Runs natively on Windows using the Win32 API for the pop-up. It can also be executed on Linux, macOS, or other platforms via Wine. 💻
 
-- is very simple (it's just 11 lines of code with no dependencies)
+### Compiling Instructions ⚙️
 
-- runs natively only on Windows (because it uses the win32 API to create the pop-up), but you can use Wine to run it on Linux/macOS/whatever
-
-Compiling
----------
-
-If you have [Zig][2] installed, you can just run this:
+To compile the program, ensure you have [Zig](https://ziglang.org/) installed. Then, run the following command in your terminal:
 
 ```sh
 zig cc albanian-virus.c -target x86_64-windows-gnu -o virus.exe
 ```
 
-Other C compilers should also work, but I didn't bother testing them since `zig cc` is the only one that can easily cross-compile (I don't use Windows)
-
-[1]: https://www.reddit.com/r/masterhacker/comments/hbo7j2/the_virus_no_one_can_beat/
-[2]: https://ziglang.org/
+While other C compilers may work, `zig cc` is recommended for its ease of cross-compilation (as I primarily use non-Windows systems). 🚀
